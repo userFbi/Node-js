@@ -1,0 +1,23 @@
+<form action="/createData">
+  name =
+  <input type="text" name="name" />
+  <br /><br />
+  surname =
+  <input type="text" name="surname" />
+  <br /><br />
+  <button type="submit">Submit</button>
+</form>
+
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Surname</th>
+  </tr>
+  <% stData.map((i,index)=> { %>
+  <tr>
+    <td><%= i.name %></td>
+    <td><%= i.surname %></td>
+  </tr>
+  <% }) %>
+</table>
+
