@@ -12,12 +12,19 @@
   <tr>
     <th>Name</th>
     <th>Surname</th>
+    <th>Delete</th>
+    <th>Edit</th>
   </tr>
   <% stData.map((i,index)=> { %>
   <tr>
     <td><%= i.name %></td>
     <td><%= i.surname %></td>
+    <td>
+      <button><a href="/deleteData/index">Delete</a></button>
+    </td>
+    <td>
+      <button><a href="/updateData/index">Edit</a></button>
+    </td>
   </tr>
   <% }) %>
 </table>
-
