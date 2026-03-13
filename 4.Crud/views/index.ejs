@@ -1,10 +1,10 @@
 <form action="/createData">
   name =
-  <input type="text" name="name" />
-  <br /><br />
+  <input type="text" name="name" value="<%= edit ? edit.name : '' %>"/><br /><br />
+
   surname =
-  <input type="text" name="surname" />
-  <br /><br />
+  <input type="text" name="surname" value="<%= edit ? edit.surname : '' %>" /><br /><br />
+
   <button type="submit">Submit</button>
 </form>
 
@@ -20,10 +20,10 @@
     <td><%= i.name %></td>
     <td><%= i.surname %></td>
     <td>
-      <button><a href="/deleteData/index">Delete</a></button>
+      <button><a href="/deleteData/<%= index %>">Delete</a></button>
     </td>
     <td>
-      <button><a href="/updateData/index">Edit</a></button>
+      <button><a href="/updateData/<%= index %>">Edit</a></button>
     </td>
   </tr>
   <% }) %>
