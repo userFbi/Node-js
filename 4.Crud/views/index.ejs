@@ -1,9 +1,17 @@
 <form action="/createData">
   name =
-  <input type="text" name="name" value="<%= edit ? edit.name : '' %>"/><br /><br />
+  <input
+    type="text"
+    name="name"
+    value="<%= edit ? edit.name : '' %>"
+  /><br /><br />
 
   surname =
-  <input type="text" name="surname" value="<%= edit ? edit.surname : '' %>" /><br /><br />
+  <input
+    type="text"
+    name="surname"
+    value="<%= edit ? edit.surname : '' %>"
+  /><br /><br />
 
   <button type="submit">Submit</button>
 </form>
