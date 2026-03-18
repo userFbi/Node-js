@@ -3,6 +3,7 @@ const app = express();
 const fs = require("fs");
 
 let stData = [];
+
 let fileData = fs.readFileSync("data.json", "utf-8");
 if (fileData != "") {
   stData = JSON.parse(fileData);
